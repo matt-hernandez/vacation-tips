@@ -153,6 +153,10 @@ section {
   border: 1px solid $paragraph-text-color;
   font-family: Arial, sans-serif;
   background-color: transparent;
+
+  &:disabled {
+    border: 1px solid rgba($paragraph-text-color, 0.3);
+  }
 }
 
 .fade-enter {

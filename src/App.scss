@@ -98,6 +98,10 @@ a {
   font-size: rem(14px);
 }
 
+strong {
+  font-weight: 600;
+}
+
 nav {
   position: fixed;
   background-color: $menu-background-color;
@@ -105,9 +109,12 @@ nav {
 
 main {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding-top: rem(32px);
   padding-right: rem(20px);
+  padding-bottom: rem(32px);
   padding-left: rem(20px);
 }
 
@@ -119,4 +126,24 @@ section {
   @include media('>tablet') {
     max-width: rem(920px);
   }
+}
+
+.next-prev {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: rem(16px);
+  margin-bottom: rem(16px);
+
+  @include media('>tablet') {
+    max-width: rem(920px);
+  }
+}
+
+.route-navigator {
+  padding: rem(8px) rem(12px);
+  font-size: rem(14px);
+  border: 1px solid $paragraph-text-color;
+  font-family: Arial, sans-serif;
+  background-color: transparent;
 }

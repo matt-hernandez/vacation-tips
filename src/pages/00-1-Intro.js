@@ -27,8 +27,8 @@ class Intro extends Component {
           and you can come back tomorrow with a fresh mind.
         </p>
         <p>
-          Note: All links to credit cards in this guide are affiliate links. If you apply for any of
-          these cards and are approved, I may receive compensation for it.
+          <strong>Note:</strong> All links to credit cards in this guide are affiliate links. If
+          you apply for any of these cards and are approved, I may receive compensation for it.
         </p>
       </section>
     );

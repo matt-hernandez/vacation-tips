@@ -1,20 +1,38 @@
 import React, { Component } from 'react';
-import Intro from './pages/00-1-Intro';
-import Disclaimer1 from './pages/00-2-Disclaimer1';
-import Disclaimer2 from './pages/00-3-Disclaimer2';
-import Disclaimer3 from './pages/00-4-Disclaimer3';
+import NextPrev from './components/next-prev';
+import journey from './constants/journey';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.scss';
 
+let pageIndex = 0;
+const lastPageIndex = journey.length - 1;
+
 class App extends Component {
+  onPrev() {
+    if (pageIndex > 0) {
+      pageIndex--;
+    }
+  }
+
+  onNext() {
+    if (pageIndex < lastPageIndex) {
+      pageIndex++;
+    }
+  }
+
   render() {
+    const prevDisabled = pageIndex === 0;
+    const nextDisabled = pageIndex === lastPageIndex;
     return (
       <Router>
         <main>
-          <Route exact path="/" component={Intro} />
-          <Route exact path="/disclaimer1" component={Disclaimer1} />
-          <Route exact path="/disclaimer2" component={Disclaimer2} />
-          <Route exact path="/disclaimer3" component={Disclaimer3} />
+          {journey.map(page =>
+            <Route exact key={page.url} path={page.url} component={page.component} />)}
+          <NextPrev
+            onPrev={this.onPrev}
+            onNext={this.onNext}
+            prevDisabled={prevDisabled}
+            nextDisabled={nextDisabled} />
         </main>
       </Router>
     );

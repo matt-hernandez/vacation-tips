@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import journey from '../constants/journey';
-
-const localStoragePageIndex = localStorage.getItem('ccTravelPageIndex') || 0;
-let pageIndex = localStoragePageIndex ? Number(localStoragePageIndex) : 0;
-const lastPageIndex = journey.length - 1;
+import { getPageIndex, decreasePageIndex, increasePageIndex,
+  isAtBeginning, isAtEnd } from '../constants/page-index';
 
 class NextPrev extends Component {
   static propTypes = {
@@ -13,21 +11,18 @@ class NextPrev extends Component {
   };
 
   onPrev = () => {
-    if (pageIndex > 0) {
-      pageIndex--;
-      this.navigate();
-    }
+    decreasePageIndex();
+    this.navigate();
   }
 
   onNext = () => {
-    if (pageIndex < lastPageIndex) {
-      pageIndex++;
-      this.navigate();
-    }
+    increasePageIndex();
+    this.navigate();
   }
 
   navigate() {
     const { history } = this.props;
+    const pageIndex = getPageIndex();
     history.push(journey[pageIndex].url);
     localStorage.setItem('ccTravelPageIndex', pageIndex)
   }
@@ -35,8 +30,8 @@ class NextPrev extends Component {
   render() {
     const { onPrev } = this;
     const { onNext } = this;
-    const prevDisabled = pageIndex === 0;
-    const nextDisabled = pageIndex === lastPageIndex;
+    const prevDisabled = isAtBeginning();
+    const nextDisabled = isAtEnd();
     return (
       <div className="next-prev">
         <button className="route-navigator" onClick={onPrev} disabled={prevDisabled}>Previous</button>

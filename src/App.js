@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import NextPrev from './components/next-prev';
 import journey from './constants/journey';
+import { getPageIndex } from './constants/page-index';
 
 let needRedirect = true;
-const localStoragePageIndex = localStorage.getItem('ccTravelPageIndex') || 0;
-const pageIndex = localStoragePageIndex ? Number(localStoragePageIndex) : 0;
+const pageIndex = getPageIndex();
 
 class App extends Component {
   render() {

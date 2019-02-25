@@ -1,19 +1,40 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { withRouter } from 'react-router-dom';
+import journey from '../constants/journey';
+
+let pageIndex = 0;
+const lastPageIndex = journey.length - 1;
 
 class NextPrev extends Component {
   static propTypes = {
-    nextDisabled: PropTypes.bool,
-    onNext: PropTypes.func,
-    onPrev: PropTypes.func,
-    prevDisabled: PropTypes.bool
+    history: PropTypes.object
   };
 
+  onPrev = () => {
+    if (pageIndex > 0) {
+      pageIndex--;
+      this.navigate();
+    }
+  }
+
+  onNext = () => {
+    if (pageIndex < lastPageIndex) {
+      pageIndex++;
+      this.navigate();
+    }
+  }
+
+  navigate() {
+    const { history } = this.props;
+    history.push(journey[pageIndex].url);
+  }
+
   render() {
-    const { onPrev } = this.props;
-    const { onNext } = this.props;
-    const { prevDisabled } = this.props;
-    const { nextDisabled } = this.props;
+    const { onPrev } = this;
+    const { onNext } = this;
+    const prevDisabled = pageIndex === 0;
+    const nextDisabled = pageIndex === lastPageIndex;
     return (
       <div className="next-prev">
         <button className="route-navigator" onClick={onPrev} disabled={prevDisabled}>Previous</button>
@@ -23,4 +44,4 @@ class NextPrev extends Component {
   }
 }
 
-export default NextPrev;
+export default withRouter(NextPrev);

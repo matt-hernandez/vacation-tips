@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import journey from '../constants/journey';
 
-let pageIndex = 0;
+const localStoragePageIndex = localStorage.getItem('ccTravelPageIndex') || 0;
+let pageIndex = localStoragePageIndex ? Number(localStoragePageIndex) : 0;
 const lastPageIndex = journey.length - 1;
 
 class NextPrev extends Component {
@@ -28,6 +29,7 @@ class NextPrev extends Component {
   navigate() {
     const { history } = this.props;
     history.push(journey[pageIndex].url);
+    localStorage.setItem('ccTravelPageIndex', pageIndex)
   }
 
   render() {

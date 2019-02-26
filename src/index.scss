@@ -51,6 +51,10 @@ table {
 	border-spacing: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 $base-font-size: 16px;
 $body-background-color: #fafafa;
 $menu-background-color: #e0e0e0;
@@ -115,10 +119,14 @@ nav {
 }
 
 main {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  width: 100%;
+  height: 100%;
   padding-top: rem(32px);
   padding-right: rem(20px);
   padding-bottom: rem(32px);
@@ -138,6 +146,7 @@ section {
 .next-prev {
   display: flex;
   justify-content: space-between;
+  flex-shrink: 0;
   width: 100%;
   margin-top: rem(16px);
   margin-bottom: rem(16px);
@@ -159,24 +168,52 @@ section {
   }
 }
 
-.fade-enter {
-  opacity: 0; // start of entrance
-  transform: translateX(33%);
+.forward {
 
-  &.fade-enter-active { // end of entrance
-    opacity: 1;
+  .fade-enter {
+    opacity: 0; // start of entrance
+    transform: translateX(17%);
+  
+    &.fade-enter-active { // end of entrance
+      opacity: 1;
+      transform: translateX(0);
+      transition: all 600ms 300ms ease;
+    }
+  }
+
+  .fade-exit {
+    opacity: 1; // start of exit
     transform: translateX(0);
-    transition: all 250ms 250ms ease-in;
+  
+    &.fade-exit-active {
+      opacity: 0;
+      transform: translateX(-17%);
+      transition: all 600ms ease;
+    }
   }
 }
 
-.fade-exit {
-  opacity: 1; // start of exit
-  transform: translateX(0);
+.backward {
 
-  &.fade-exit-active {
-    opacity: 0;
-    transform: translateX(-33%);
-    transition: all 250ms ease-in;
+  .fade-enter {
+    opacity: 0; // start of entrance
+    transform: translateX(-17%);
+  
+    &.fade-enter-active { // end of entrance
+      opacity: 1;
+      transform: translateX(0);
+      transition: all 600ms 300ms ease;
+    }
+  }
+
+  .fade-exit {
+    opacity: 1; // start of exit
+    transform: translateX(0);
+  
+    &.fade-exit-active {
+      opacity: 0;
+      transform: translateX(17%);
+      transition: all 600ms ease;
+    }
   }
 }

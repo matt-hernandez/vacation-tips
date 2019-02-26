@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import NextPrev from './components/next-prev';
-import journey from './constants/journey';
-import { getPageIndex } from './constants/page-index';
+import journey, { getPageIndex, getPageDirection } from './constants/journey';
 
 let needRedirect = true;
 const pageIndex = getPageIndex();
@@ -18,17 +16,17 @@ class App extends Component {
             return <Redirect to={journey[pageIndex].url} />;
           }
           return (
-            <main>
+            <div className={getPageDirection()}>
               <TransitionGroup>
-                <CSSTransition key={location.key} classNames="fade" timeout={300}>
+                <CSSTransition key={location.key} classNames="fade" timeout={1000}>
                   <Switch location={location}>
                     {journey.map(page =>
-                      <Route exact key={page.url} path={page.url} component={page.component} />)}
+                      <Route exact key={page.url} path={page.url} component={page.component} />
+                    )}
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>
-              <NextPrev />
-            </main>
+            </div>
           )
         }}/>
       </Router>

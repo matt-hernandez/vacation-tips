@@ -8,7 +8,7 @@ class Disclaimer2 extends Component {
         <section>
           <h1>Disclaimer 2</h1>
         </section>
-        <Banner color="#ff922b" icon="fa-comment-dollar" />
+        <Banner color="#ff922b" icon="fa fa-comment-dollar" />
         <section>
           <p>
             With my previous disclaimer having been said, I&#x2019;m just going to say that there

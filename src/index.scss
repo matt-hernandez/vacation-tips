@@ -229,8 +229,15 @@ section {
   background-image: linear-gradient(to bottom right, rgba(255, 255, 255, .2), rgba(95, 95, 95, .2));
   background-blend-mode: overlay;
   text-align: center;
+
+  .fa, .far, .fab {
+
+    &:not(:first-child) {
+      margin-left: rem(48px);
+    }
+  }
 }
 
-.fa {
+.fa, .far, .fab {
   color: #fff;
 }

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import Banner from '../components/banner';
 
-class Disclaimer1 extends Component {
+class Step1 extends Component {
   render() {
     return (
       <>
         <section>
           <h1>Step 1 - Credit card rewards programs</h1>
         </section>
-        <Banner icon="fa-credit-card" color="#2086f3" />
+        <Banner icon="far fa-credit-card" color="#2086f3" />
         <section>
           <p>
             When I originally set out to see how I could get free (or mostly free) travel perks, I
@@ -39,6 +39,9 @@ class Disclaimer1 extends Component {
             points on travel and dining purchases. So if your $14.38 was spent on a meal at a
             restaurant, you&#x2019;ll get 2 x 14 points, or 28 points.
           </p>
+        </section>
+        <Banner icon={[ 'fab fa-cc-visa', 'fab fa-cc-amex' ]} color="#2086f3" />
+        <section>
           <p>
             Each card has certain advantages and disadvantages. For example, the Chase Sapphire
             Reserve has a 3x multiplier on travel and dining purchases, while the Chase Sapphire
@@ -65,4 +68,4 @@ class Disclaimer1 extends Component {
   }
 }
 
-export default Disclaimer1;
+export default Step1;

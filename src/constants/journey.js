@@ -5,6 +5,7 @@ import { withRouter } from 'react-router-dom';
 import Disclaimer1 from '../pages/00-2-Disclaimer1';
 import Disclaimer2 from '../pages/00-3-Disclaimer2';
 import Disclaimer3 from '../pages/00-4-Disclaimer3';
+import Step1 from '../pages/01-1-Step1';
 
 const journey = [
   {
@@ -22,6 +23,10 @@ const journey = [
   {
     url: '/disclaimer3',
     component: pageGenerator(Disclaimer3)
+  },
+  {
+    url: '/step1',
+    component: pageGenerator(Step1)
   }
 ];
 

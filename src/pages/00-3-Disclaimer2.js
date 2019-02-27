@@ -12,8 +12,8 @@ class Disclaimer2 extends Component {
         <section>
           <p>
             With my previous disclaimer having been said, I&#x2019;m just going to say that there
-            are three conditions you need to fulfill before you do anything in this guide. If you
-            don&#x2019;t meet these three conditions, come back to this website for later, or at
+            are four conditions you need to fulfill before you do anything in this guide. If you
+            don&#x2019;t meet these four conditions, come back to this website for later, or at
             least wait to follow any of its advice until later.
           </p>
           <p>
@@ -32,6 +32,14 @@ class Disclaimer2 extends Component {
             Condition 3 - You must have an established credit score in decent standing. Ideally,
             your score is 700 or better. You might get lucky with a lower score, but you could
             potentially make your score worse if you apply for a card and get rejected.
+          </p>
+          <p>
+            Condition 4 - You must not be expecting to take out any large loans very soon
+            (like for a house, car, or business). Playing with credit cards could impact your credit
+            score, and if you have big loans coming up, or even a job offer or apartment
+            application, a ding on your score could have a negative impact on you. Ideally,
+            any large loans or life changes involving credit are at least 2 years in the future
+            for you.
           </p>
         </section>
       </>

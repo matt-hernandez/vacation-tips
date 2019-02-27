@@ -8,7 +8,7 @@ class Disclaimer1 extends Component {
         <section>
           <h1>Disclaimer 1</h1>
         </section>
-        <Banner icon="fa fa-exclamation" color="#e64980" />
+        <Banner icon="fas fa-exclamation" color="#e64980" />
         <section>
           <p>
             I&#x2019;m not a financial adviser. If you follow my advice in this website,

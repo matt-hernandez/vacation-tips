@@ -18,6 +18,7 @@ import Step4 from '../pages/04-1-Step4';
 import Step4WhatIDid from '../pages/04-2-Step4';
 import Step5 from '../pages/05-1-Step5';
 import Step5WhatIDid from '../pages/05-2-Step5';
+import Step5P5 from '../pages/05-3-Step5';
 
 const journey = [
   {
@@ -87,6 +88,10 @@ const journey = [
   {
     url: '/step5WhatIDid',
     component: pageGenerator(Step5WhatIDid)
+  },
+  {
+    url: '/step5P5',
+    component: pageGenerator(Step5P5)
   }
 ];
 
@@ -97,6 +102,12 @@ let pageDirection = 'forward';
 
 export function getPageIndex() {
   return pageIndex;
+}
+
+export function setPageIndex(index) {
+  if (index >= 0 && index <= lastPageIndex) {
+    pageIndex = index;
+  }
 }
 
 export function decreasePageIndex() {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import journey, { getPageIndex, getPageDirection } from './constants/journey';
+import journey, { getPageIndex, getPageDirection, setPageIndex } from './constants/journey';
 
 let needRedirect = true;
 const pageIndex = getPageIndex();
@@ -15,6 +15,8 @@ class App extends Component {
             needRedirect = false;
             return <Redirect to={journey[pageIndex].url} />;
           }
+          const newPageIndex = journey.findIndex(page => page.url === location.pathname);
+          setPageIndex(newPageIndex);
           return (
             <div className={getPageDirection()}>
               <TransitionGroup>

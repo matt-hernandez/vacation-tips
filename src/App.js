@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <Router>
         <Route render={({ location }) => {
-          if (pageIndex > 0 && needRedirect && location.pathname === '') {
+          if (pageIndex > 0 && needRedirect && location.pathname === '/') {
             needRedirect = false;
             return <Redirect to={journey[pageIndex].url} />;
           }

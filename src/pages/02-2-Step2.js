@@ -59,6 +59,21 @@ class Step2P5 extends Component {
             or next month (at least you shouldn&#x2019;t be if you&#x2019;re following this plan).
             Be patient. You&#x2019;ll find something.
           </p>
+          <p>
+            Once you have a sense of which airlines have the best deals on miles for your
+            destination, go back to the credit cards and their rewards chart. Weigh your options.
+            You may not get a perfect deal, but you&#x2019;ll have enough information to pick
+            the <strong>best</strong> deal.
+          </p>
+          <p>
+            When you find that one airline (or two, or three) that seem like a good fit for you,
+            go to that airline&#x2019;s website and sign up for their rewards program.
+            Don&#x2019;t be too hesitant about this. Airlines don&#x2019;t typically require
+            anything when signing up for their rewards program other than your basic info. You
+            don&#x2019;t even need a credit card to sign up or start earning miles. So even
+            if you change your mind down the road about which airline go with, it costs you
+            nothing to be a member of their rewards program.
+          </p>
         </section>
       </>
     );

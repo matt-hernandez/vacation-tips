@@ -8,7 +8,7 @@ class Disclaimer3 extends Component {
         <section>
           <h1>Disclaimer 3</h1>
         </section>
-        <Banner color="#20c997" icon="fa fa-calendar-alt" />
+        <Banner color="#20c997" icon="fas fa-calendar-alt" />
         <section>
           <p>
             The process I&#x2019;m outlining here is not quick. I would say it takes six months to a

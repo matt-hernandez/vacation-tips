@@ -8,7 +8,7 @@ class Step1Continued extends Component {
         <section>
           <h1>Step 1 - Credit card rewards programs (continued)</h1>
         </section>
-        <Banner icon="fa fa-money-bill-alt" color="#2086f3" />
+        <Banner icon="fas fa-money-bill-alt" color="#2086f3" />
         <section>
           <p>
             To get back to points, all of the mentioned cards have &#x201C;sign-up bonuses&#x201D;

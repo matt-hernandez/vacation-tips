@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Banner from '../components/banner';
 
-class Step4WhatIDid extends Component {
+class Step5WhatIDid extends Component {
   render() {
     return (
       <>
@@ -35,4 +35,4 @@ class Step4WhatIDid extends Component {
   }
 }
 
-export default Step4WhatIDid;
+export default Step5WhatIDid;

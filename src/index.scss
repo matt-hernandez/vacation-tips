@@ -236,6 +236,12 @@ section {
       margin-left: rem(48px);
     }
   }
+
+  .headshot {
+    width: rem(200px);
+    height: rem(200px);
+    border-radius: 50%;
+  }
 }
 
 .fa, .far, .fab {

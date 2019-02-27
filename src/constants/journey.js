@@ -9,6 +9,7 @@ import Step1 from '../pages/01-1-Step1';
 import Step1Continued from '../pages/01-2-Step1';
 import Step1WhatIDid from '../pages/01-3-Step1';
 import Step2 from '../pages/02-1-Step2';
+import Step2P5 from '../pages/02-2-Step2';
 
 const journey = [
   {
@@ -42,6 +43,10 @@ const journey = [
   {
     url: '/step2',
     component: pageGenerator(Step2)
+  },
+  {
+    url: '/step2P5',
+    component: pageGenerator(Step2P5)
   }
 ];
 

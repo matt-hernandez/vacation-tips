@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/vacation-tips/precache-manifest.a37829ef42f90314d692440e1d28f7fc.js"
+  "/vacation-tips/precache-manifest.e064906333612852a92a236f41edf873.js"
 );
 
 workbox.clientsClaim();

@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/vacation-tips/static/css/main.bd3fd81a.chunk.css"
   },
   {
-    "revision": "04faad2b8d26c4281ee7774d2b29d8a8",
+    "revision": "0a766b091b8204aa2eed71c734983551",
     "url": "/vacation-tips/index.html"
   }
 ];

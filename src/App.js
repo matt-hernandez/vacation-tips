@@ -20,7 +20,6 @@ class App extends Component {
           setPageIndex(newPageIndex);
           return (
             <div className={getPageDirection()}>
-              <Menu />
               <TransitionGroup>
                 <CSSTransition key={location.key} classNames="fade" timeout={1000}>
                   <Switch location={location}>
@@ -30,6 +29,7 @@ class App extends Component {
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>
+              <Menu />
             </div>
           )
         }}/>

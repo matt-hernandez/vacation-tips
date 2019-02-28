@@ -119,7 +119,39 @@ strong {
 
 nav {
   position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
   background-color: $menu-background-color;
+  box-shadow: 2.5px 0 5px 0 rgba(0, 0, 0, .25);
+  overflow: scroll;
+  transform: translateX(calc(-100% - 5px));
+  transition: transform 400ms ease;
+
+  &.in {
+    transform: translateX(0);
+  }
+
+  li {
+    margin-bottom: 0;
+    line-height: rem(22px);
+    border-bottom: 1px solid lighten($paragraph-text-color, 67%);
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    a {
+      display: block;
+      padding-top: rem(14px);
+      padding-right: rem(20px);
+      padding-bottom: rem(14px);
+      padding-left: rem(24px);
+      color: lighten($paragraph-text-color, 20%);
+      font-size: rem(16px);
+      text-decoration: none;
+    }
+  }
 }
 
 main {
@@ -131,7 +163,7 @@ main {
   align-items: center;
   width: 100%;
   height: 100%;
-  padding-top: rem(32px);
+  padding-top: rem(40px);
   padding-right: rem(20px);
   padding-bottom: rem(32px);
   padding-left: rem(20px);
@@ -145,6 +177,47 @@ section {
 
   @include media('>tablet') {
     max-width: rem(920px);
+  }
+}
+
+.menu-toggle {
+  position: fixed;
+  top: rem(12px);
+  left: rem(16px);
+  padding: rem(6px);
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.close-menu {
+  position: absolute;
+  top: rem(8px);
+  right: rem(8px);
+  padding-top: 0;
+  padding-right: rem(6px);
+  padding-bottom: rem(6px);
+  padding-left: rem(6px);
+  font-size: rem(28px);
+  line-height: .8;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.hamburger-stick {
+  display: block;
+  width: rem(28px);
+  height: rem(4px);
+  margin-bottom: rem(4px);
+  background-color: lighten($paragraph-text-color, 25%);
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -167,6 +240,7 @@ section {
   border: 1px solid $paragraph-text-color;
   font-family: Arial, sans-serif;
   background-color: transparent;
+  cursor: pointer;
 
   &:disabled {
     border: 1px solid rgba($paragraph-text-color, 0.3);

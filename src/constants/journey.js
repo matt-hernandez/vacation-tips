@@ -120,7 +120,7 @@ const journey = [
   }
 ].map(page => ({
   ...page,
-  title: page.title,
+  title: page.page.title,
   component: pageGenerator(page.page)
 }));
 

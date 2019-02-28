@@ -7,7 +7,7 @@ class Intro extends Component {
     return (
       <>
         <section>
-          <img className="banner-image" src="/banner.jpg" alt="Banner of Amsterdam, Ireland, and Berlin"/>
+          <img className="banner-image" src="banner.jpg" alt="Banner of Amsterdam, Ireland, and Berlin"/>
           <p>
             This is me. Last year, I took a trip across three countries: 7 days exploring Ireland, 4
             days hanging out in Berlin, and 5 days concluding my trip in Amsterdam. This kind of
@@ -27,7 +27,7 @@ class Intro extends Component {
             give you a high-level summary of how I planned my trip, what cards I got, and
             how I went about getting rewards responsibly. If you find that you need to take a break
             from this guide, no worries. This site will automatically remember where you left off,
-            and you can come back tomorrow with a fresh mind.
+            and you can come back tomorrow with a fresh mind. It will even run offline!
           </p>
           <p>
             <strong>Note:</strong> Some links to credit cards in this guide are affiliate links. If

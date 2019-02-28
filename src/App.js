@@ -20,11 +20,10 @@ class App extends Component {
           const newPageIndex = journey.findIndex(page => page.url === location.pathname);
           setPageIndex(newPageIndex);
           const pageDirection = getPageDirection();
-          const timeout = pageDirection === 'still' ? 0 : 1000;
           return (
             <div className={pageDirection}>
               <TransitionGroup>
-                <CSSTransition key={location.key} classNames="fade" timeout={timeout}>
+                <CSSTransition key={location.key} classNames="fade" timeout={1000}>
                   <Switch location={location}>
                     {journey.map(page =>
                       <Route exact key={page.url} path={page.url} component={page.component} />
@@ -32,7 +31,7 @@ class App extends Component {
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>
-              <Menu />
+              <Menu activeIndex={newPageIndex} />
             </div>
           )
         }}/>

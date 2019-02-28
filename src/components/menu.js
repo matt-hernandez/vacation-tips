@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import journey from '../constants/journey';
 
-function Menu() {
+function Menu({ activeIndex }) {
   const [ menuPosition, setPosition ] = useState('out');
 
   const togglePosition = () => {
@@ -29,9 +30,10 @@ function Menu() {
           &times;
         </button>
         <ul>
-          { journey.map(page => (
+          { journey.map((page, i) => (
             <li key={page.url}>
-              <Link to={page.url}>{page.title}</Link>
+              {i !== activeIndex && <Link to={page.url}>{page.title}</Link>}
+              {i === activeIndex && <button className="fake-link">{page.title}</button>}
             </li>
           )) }
         </ul>
@@ -39,5 +41,9 @@ function Menu() {
     </div>
   );
 }
+
+Menu.propTypes = {
+  activeIndex: PropTypes.number
+};
 
 export default Menu;

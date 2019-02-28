@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/vacation-tips/static/media/fa-regular-400.5dd3976c.woff"
   },
   {
-    "revision": "cd8f7a74e9dd43ad313a",
-    "url": "/vacation-tips/static/css/main.09a8a503.chunk.css"
+    "revision": "261a173dae3d16d46f98",
+    "url": "/vacation-tips/static/css/main.02532592.chunk.css"
   },
   {
     "revision": "4d43aafc73214d525698",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/vacation-tips/static/media/fa-regular-400.65779ebc.woff2"
   },
   {
-    "revision": "cd8f7a74e9dd43ad313a",
-    "url": "/vacation-tips/static/js/main.cd8f7a74.chunk.js"
+    "revision": "261a173dae3d16d46f98",
+    "url": "/vacation-tips/static/js/main.261a173d.chunk.js"
   },
   {
     "revision": "4b115e1153a9ea339d6a0bb284cc8ed3",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/vacation-tips/static/media/Raleway.f0ff0dd2.woff2"
   },
   {
-    "revision": "beac4b37f19989da5974887504d2f4f3",
+    "revision": "22916b4d49fd4c16d26a169f5f06744f",
     "url": "/vacation-tips/index.html"
   }
 ];

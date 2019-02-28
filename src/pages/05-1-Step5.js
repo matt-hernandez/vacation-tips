@@ -51,7 +51,7 @@ class Step5 extends Component {
             negatively impact my credit score?&#x201D; As I said before, I&#x2019;m not an authority
             on how many open cards is considered &#x201C;safe&#x201D;. However, if this
             hotel card will be your third, fourth, or fifth card, most online sources say
-            you&#x2019;ll probably be okay. So long as the credit card applications we&#x2019;re
+            you&#x2019;ll probably be okay as long as the credit card applications we&#x2019;re
             spaced out enough.
           </p>
         </section>

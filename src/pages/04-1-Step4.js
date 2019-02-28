@@ -20,10 +20,10 @@ class Step4 extends Component {
             balance on the card and thereby get charged interest. You don&#x2019;t want that!
           </p>
           <p>
-            As soon as you get your card, put that thing on auto-pay and set it to pay off the
-            balance in full every month. If you followed my requirements at the start of this guide,
-            you should have enough money in the bank to pay off a full balance every month. And if
-            you have a good credit score already, you&#x2019;re probably doing this anyway.
+            As soon as you get your card, put that thing on auto-pay and set it to pay the
+            full balance every month. If you followed my requirements at the start of this guide,
+            you should have enough money in the bank to do this comfortably. And if
+            you have a good credit score already, you&#x2019;re probably doing it anyway.
           </p>
           <p>
             But what about that spending goal itself? If you applied for the <Link
@@ -40,7 +40,7 @@ class Step4 extends Component {
           <p>
             Depending on your lifestyle, you may meet that spending goal pretty easily. But
             if your living expenses don&#x2019;t seem high enough, there are some
-            tricks you can pull, albeit with some risk involved.
+            tricks you can pull, albeit with some risk.
           </p>
           <p>
             Can you pay off your rent with your credit card? You may incur a small percentage fee,
@@ -51,7 +51,7 @@ class Step4 extends Component {
           </p>
           <p>
             Know your limits and don&#x2019;t do anything that makes you feel uneasy (or shady).
-            The idea to meeting your sign-up bonus goal responsibly is to spend like you would
+            The idea to getting your sign-up bonus responsibly is to spend like you would
             normally, only now you&#x2019;re putting every possible expense on one card. And
             remember, you usually have three months to meet the spending limit. You don&#x2019;t
             have to do it all at once.

@@ -32,7 +32,7 @@ class Step8 extends Component {
           <p>
             After the bonus, I put several monthly bills on the card and plan on keeping it with me
             for some time. I earn enough on it to justify the annual fee. And my miles with United
-            rely on me being a continual earner. But like I said before, the card doesn&#x2019;t
+            rely on me being a continual earner. Like I said before, the card doesn&#x2019;t
             weigh me down.
           </p>
         </section>

@@ -13,12 +13,12 @@ class Step3 extends Component {
           <p>
             So by now you&#x2019;ve got a sense of credit card reward programs, which airlines
             they&#x2019;re partnered with, which airlines can take you to your destination, and how
-            to possibly squeeze out one or two extra points nearby your destination for either no
+            to possibly squeeze out one or two extra places nearby your destination for either no
             cost or a reduced cost.
           </p>
           <p>
             You can now get the card that is right for you. But once you send that credit card
-            application, and hopefully see that approval message, you&#x2019;re in the game.
+            application, and hopefully get approved, you&#x2019;re in the game.
             And we need to set you up for success.
           </p>
         </section>

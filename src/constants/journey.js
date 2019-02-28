@@ -136,6 +136,7 @@ export function getPageIndex() {
 export function setPageIndex(index) {
   if (index >= 0 && index <= lastPageIndex) {
     pageIndex = index;
+    localStorage.setItem('ccTravelPageIndex', pageIndex)
   }
 }
 
@@ -143,6 +144,7 @@ export function decreasePageIndex() {
   if (pageIndex > 0) {
     pageIndex--;
     pageDirection = 'backward';
+    localStorage.setItem('ccTravelPageIndex', pageIndex)
   }
 }
 
@@ -150,6 +152,7 @@ export function increasePageIndex() {
   if (pageIndex < lastPageIndex) {
     pageIndex++;
     pageDirection = 'forward';
+    localStorage.setItem('ccTravelPageIndex', pageIndex)
   }
 }
 
@@ -184,7 +187,6 @@ class NextPrev extends Component {
     const { history } = this.props;
     const pageIndex = getPageIndex();
     history.push(journey[pageIndex].url);
-    localStorage.setItem('ccTravelPageIndex', pageIndex)
   }
 
   render() {

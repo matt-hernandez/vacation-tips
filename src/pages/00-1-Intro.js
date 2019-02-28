@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import bannerImg from '../images/banner.jpg';
 
 class Intro extends Component {
   static title = 'Introduction';
@@ -7,6 +8,7 @@ class Intro extends Component {
     return (
       <>
         <section>
+          <img className="banner-image" src={bannerImg} alt="Banner of Amsterdam, Ireland, and Berlin"/>
           <p>
             This is me. Last year, I took a trip across three countries: 7 days exploring Ireland, 4
             days hanging out in Berlin, and 5 days concluding my trip in Amsterdam. This kind of

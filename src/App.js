@@ -16,6 +16,7 @@ class App extends Component {
             needRedirect = false;
             return <Redirect to={journey[pageIndex].url} />;
           }
+          needRedirect = false;
           const newPageIndex = journey.findIndex(page => page.url === location.pathname);
           setPageIndex(newPageIndex);
           return (

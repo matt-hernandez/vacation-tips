@@ -19,7 +19,7 @@ class Step2P5WhatIDid extends Component {
             Some finagling with the departing and returning dates would be needed, but I was
             ready for that. All that&#x2019;s left to pay were
             some airline fees that were very reasonable. Knowing that in mind, and knowing that I
-            wanted to somewhere in Europe, picking the Chase rewards program was easy.
+            wanted to go somewhere in Europe, picking the Chase rewards program was easy.
           </p>
           <p>
             But wait. My trip wasn&#x2019;t just to one destination in Europe. My whole trip was

@@ -46,7 +46,7 @@ class Step2P5 extends Component {
             miles?
           </p>
           <p>
-            You&#x2019;ll quickly see that not all airline rewards programs are create equal.
+            You&#x2019;ll quickly see that not all airline rewards programs are created equal.
             Depending on how many credit card points you can get, and the transfer rate between
             points to miles, you may be looking at a long time to gather up enough points for those
             miles or a short time (especially if you get a big sign-up bonus).

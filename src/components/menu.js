@@ -32,7 +32,7 @@ function Menu({ activeIndex }) {
             { journey.map((page, i) => (
               <li key={page.url}>
                 {i !== activeIndex && <Link to={page.url} onClick={closeMenu}>{page.title}</Link>}
-                {i === activeIndex && <button className="fake-link" onClick={closeMenu}>{page.title}</button>}
+                {i === activeIndex && <a onClick={closeMenu}>{page.title}</a>}
               </li>
             )) }
           </ul>

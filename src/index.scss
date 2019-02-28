@@ -185,7 +185,7 @@ nav {
       border-bottom: 0;
     }
 
-    a, .fake-link {
+    a {
       display: block;
       padding-top: rem(14px);
       padding-right: rem(20px);
@@ -194,19 +194,7 @@ nav {
       color: lighten($paragraph-text-color, 20%);
       font-size: rem(16px);
       text-decoration: none;
-    }
-
-    .fake-link {
-      width: 100%;
-      border: 0;
-      font-family: $paragraph-font;
-      text-align: left;
-      background-color: transparent;
       cursor: pointer;
-
-      &:focus {
-        outline: 0;
-      }
     }
   }
 }

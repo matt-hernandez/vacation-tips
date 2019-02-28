@@ -34,7 +34,7 @@ class Step2P5WhatIDidContinued extends Component {
           </p>
           <p>
             Originally, I wanted to fly from Houston to Amsterdam, take the train to Berlin, and
-            fly from Berlin to Amsterdam. But there were no bookings for that plan that allowed for
+            fly from Berlin to Ireland. But there were no bookings for that plan that allowed for
             me to spend only 60,000 miles. So I changed the order and flew to Ireland first, then
             to Berlin, and finally ended up in Amsterdam. Not only did I get the booking for 60,000
             miles, I also got a killer amount for airline fees.

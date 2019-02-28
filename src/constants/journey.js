@@ -134,7 +134,15 @@ export function getPageIndex() {
 }
 
 export function setPageIndex(index) {
-  if (index >= 0 && index <= lastPageIndex) {
+  if (index === pageIndex) {
+    pageDirection = 'still';
+  }
+  if (index >= 0 && index <= lastPageIndex && index !== pageIndex) {
+    if (pageIndex > index) {
+      pageDirection = 'backward';
+    } else {
+      pageDirection = 'forward';
+    }
     pageIndex = index;
     localStorage.setItem('ccTravelPageIndex', pageIndex)
   }

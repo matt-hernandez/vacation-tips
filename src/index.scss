@@ -160,6 +160,13 @@ nav {
   transform: translateX(calc(-100% - 5px));
   transition: transform 400ms ease;
 
+  @include media('<tablet') {
+    width: rem(360px);
+  }
+  @include media('<520px') {
+    width: rem(260px);
+  }
+
   &.in {
     transform: translateX(0);
   }
@@ -396,4 +403,12 @@ i {
   width: 100%;
   margin-top: rem(12px);
   margin-bottom: rem(32px);
+}
+
+.menu-close-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }

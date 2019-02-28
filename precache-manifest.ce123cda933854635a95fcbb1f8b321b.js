@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/vacation-tips/static/media/fa-regular-400.5dd3976c.woff"
   },
   {
-    "revision": "08bc321ba18cd9132fbb",
-    "url": "/vacation-tips/static/css/main.156cfc9b.chunk.css"
+    "revision": "cd8f7a74e9dd43ad313a",
+    "url": "/vacation-tips/static/css/main.09a8a503.chunk.css"
   },
   {
     "revision": "4d43aafc73214d525698",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/vacation-tips/static/media/fa-regular-400.65779ebc.woff2"
   },
   {
-    "revision": "08bc321ba18cd9132fbb",
-    "url": "/vacation-tips/static/js/main.08bc321b.chunk.js"
+    "revision": "cd8f7a74e9dd43ad313a",
+    "url": "/vacation-tips/static/js/main.cd8f7a74.chunk.js"
   },
   {
     "revision": "4b115e1153a9ea339d6a0bb284cc8ed3",
@@ -48,15 +48,15 @@ self.__precacheManifest = [
     "url": "/vacation-tips/static/media/fa-solid-900.61969d43.woff"
   },
   {
-    "revision": "f0ff0dd296d70ffd76ff3d30a0feda08",
-    "url": "/vacation-tips/static/media/Raleway.f0ff0dd2.woff2"
-  },
-  {
     "revision": "c0c2ab5476ece241eafa5bc42bd2f170",
     "url": "/vacation-tips/static/media/Merriweather.c0c2ab54.woff2"
   },
   {
-    "revision": "a5c02f8d085c9d01b504c27dd3e0830f",
+    "revision": "f0ff0dd296d70ffd76ff3d30a0feda08",
+    "url": "/vacation-tips/static/media/Raleway.f0ff0dd2.woff2"
+  },
+  {
+    "revision": "beac4b37f19989da5974887504d2f4f3",
     "url": "/vacation-tips/index.html"
   }
 ];

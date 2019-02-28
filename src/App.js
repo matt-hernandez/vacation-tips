@@ -10,7 +10,7 @@ const pageIndex = getPageIndex();
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename="/vacation-tips">
         <Route render={({ location }) => {
           if (pageIndex > 0 && needRedirect && location.pathname === '/') { // Used at start up
             needRedirect = false;

@@ -36,12 +36,12 @@ self.__precacheManifest = [
     "url": "/vacation-tips/static/media/fa-brands-400.4b115e11.woff2"
   },
   {
-    "revision": "462806316fea535a6a57651bc2b000b0",
-    "url": "/vacation-tips/static/media/fa-solid-900.46280631.woff2"
-  },
-  {
     "revision": "b90365bccdabd68c6c03902b4b141f09",
     "url": "/vacation-tips/static/media/fa-brands-400.b90365bc.woff"
+  },
+  {
+    "revision": "462806316fea535a6a57651bc2b000b0",
+    "url": "/vacation-tips/static/media/fa-solid-900.46280631.woff2"
   },
   {
     "revision": "61969d433bf265b9717a6c357a1e04e4",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/vacation-tips/static/media/Raleway.f0ff0dd2.woff2"
   },
   {
-    "revision": "b158333396807d7e9e6b52fb1619af10",
+    "revision": "fb82abfcd96e2c350b52a1d25ee0eded",
     "url": "/vacation-tips/index.html"
   }
 ];

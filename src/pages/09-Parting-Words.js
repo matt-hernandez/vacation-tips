@@ -29,6 +29,45 @@ class PartingWords extends Component {
               to maximize your points and general travel tips.
             </li>
           </ul>
+          <div className="spacer" />
+          <p>
+            My current travel cards
+          </p>
+          <ul>
+            <li>
+              <Link href="https://www.referyourchasecard.com/6/Q69RWB34CF">Chase Sapphire Preferred</Link>
+            </li>
+            <li>
+              <Link href="https://www.referyourchasecard.com/217/JOXQOLVIGS">Chase United Explorer</Link>
+            </li>
+            <li>
+              <Link href="https://www.referyourchasecard.com/255/DA8RRN0T81">Chase Southwest Priority</Link> - For domestic flights
+            </li>
+          </ul>
+          <div className="spacer" />
+          <p>
+            American Express Rewards cards
+          </p>
+          <ul>
+            <li>
+              <Link href="https://card.americanexpress.com/d/platinum-charge-card/gold-card/?">Amex Gold Card</Link>
+            </li>
+            <li>
+              <Link href="https://card.americanexpress.com/d/platinum-charge-card/">Amex Platinum Card</Link>
+            </li>
+          </ul>
+          <div className="spacer" />
+          <p>
+            Marriott Hotel Cards
+          </p>
+          <ul>
+            <li>
+              <Link href="https://creditcards.chase.com/marriott/apply">Chase Marriott Bonvoy</Link>
+            </li>
+            <li>
+              <Link href="https://card.americanexpress.com/d/bonvoy-brilliant-credit-card/?">Amex Marriott Bonvoy</Link>
+            </li>
+          </ul>
         </section>
       </>
     );

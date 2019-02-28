@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Banner from '../components/banner';
+import Link from '../components/link';
 
-class Step7 extends Component {
+class Step8 extends Component {
   static title = 'Step 8 - Airplane credit cards (extra credit)';
 
   render() {
@@ -15,9 +16,12 @@ class Step7 extends Component {
             two years.
           </p>
           <p>
-            So I applied for the Chase United Explorer card. By this time, I had already closed out
-            the hotel cards, so I only had my Chase Sapphire Preferred. I had plenty of time and
-            room for this card to enter into my wallet.
+            So I applied for the <Link
+              href="https://www.referyourchasecard.com/217/JOXQOLVIGS">Chase United Explorer</Link> card.
+            By this time, I had already closed out
+            the hotel cards, so I only had my <Link
+              href="https://www.referyourchasecard.com/6/Q69RWB34CF">Chase Sapphire Preferred</Link>.
+            I had plenty of time and room for this card to enter into my wallet.
           </p>
           <p>
             I was able to meet the sign-up bonus in about two months, and I got 40,000 miles out of
@@ -37,4 +41,4 @@ class Step7 extends Component {
   }
 }
 
-export default Step7;
+export default Step8;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Banner from '../components/banner';
+import Link from '../components/link';
 
 class Step1 extends Component {
   static title = 'Step 1 - Credit card rewards programs';
@@ -24,8 +25,13 @@ class Step1 extends Component {
             A credit card rewards program is something you can become a member of by applying and
             being approved for a particular credit card with a bank. The banks in this case are
             Chase and Amex. Both banks have several cards that allow you to enter into the rewards
-            program. The most popular cards with Chase are the Sapphire Preferred and the Sapphire
-            Reserve. Amex has their Gold and Platinum cards.
+            program. The most popular cards with Chase are the <Link
+              href="https://www.referyourchasecard.com/6/Q69RWB34CF">Sapphire Preferred</Link> and
+            the <Link
+              href="https://creditcards.chase.com/a1/sapphire/DualA">Sapphire Reserve</Link>.
+            Amex has their <Link
+              href="https://card.americanexpress.com/d/platinum-charge-card/gold-card/?">Gold</Link> and <Link
+              href="https://card.americanexpress.com/d/platinum-charge-card/">Platinum</Link> cards.
           </p>
           <p>
             Every time you put on expenses on this card, the bank rewards you with points.
@@ -34,7 +40,9 @@ class Step1 extends Component {
           </p>
           <p>
             But sometimes the banks will give you more points based on what kind of purchase you
-            made. For example, the Chase Sapphire Preferred rewards their credit card users 2x
+            made. For example, the <Link
+              href="https://www.referyourchasecard.com/6/Q69RWB34CF">Chase Sapphire Preferred</Link> rewards
+            their credit card users 2x
             points on travel and dining purchases. So if your $14.38 was spent on a meal at a
             restaurant, you&#x2019;ll get 2 x 14 points, or 28 points.
           </p>
@@ -42,19 +50,25 @@ class Step1 extends Component {
         <Banner icon={[ 'fab fa-cc-visa', 'fab fa-cc-amex' ]} color="#2086f3" />
         <section>
           <p>
-            Each card has certain advantages and disadvantages. For example, the Chase Sapphire
-            Reserve has a 3x multiplier on travel and dining purchases, while the Chase Sapphire
-            Preferred only has a 2x multiplier. But the Chase Sapphire Reserve also has a whopping
-            $450 annual fee that is not waived the first year. If you get a Chase Sapphire
-            Preferred, the annual fee is $0 the first year and only $95 after that.
+            Each card has certain advantages and disadvantages. For example, the <Link
+              href="https://creditcards.chase.com/a1/sapphire/DualA">Chase Sapphire
+            Reserve</Link> has a 3x multiplier on travel and dining purchases, while the <Link
+              href="https://www.referyourchasecard.com/6/Q69RWB34CF">Chase Sapphire
+            Preferred</Link> only has a 2x multiplier. But the <Link
+              href="https://creditcards.chase.com/a1/sapphire/DualA">Chase Sapphire Reserve</Link> also
+            has a whopping $450 annual fee that is not waived the first year. If you get a <Link
+              href="https://www.referyourchasecard.com/6/Q69RWB34CF">Chase Sapphire
+            Preferred</Link>, the annual fee is $0 the first year and only $95 after that.
           </p>
           <p>
             To make things a little more complicated, some credit cards will offer other unique
             bonuses outside of points. For example, in exchange for paying that giant $450 annual
-            fee with the Chase Sapphire Reserve, you&#x2019;ll get an annual $300 travel credit that
-            can be redeemed for lodging, paid parking, taxis and ride sharing, and some tourist
-            booking websites. The Chase Sapphire Preferred does not have this perk at all. So that
-            $450 fee starts to look a little more worth it.
+            fee with the <Link
+              href="https://creditcards.chase.com/a1/sapphire/DualA">Chase Sapphire Reserve</Link>,
+            you&#x2019;ll get an annual $300 travel credit that can be redeemed for lodging, paid
+            parking, taxis and ride sharing, and some tourist booking websites. The <Link
+              href="https://www.referyourchasecard.com/6/Q69RWB34CF">Chase Sapphire Preferred</Link> does
+            not have this perk at all. So that $450 fee starts to look a little more worth it.
           </p>
           <p>
             There are too many unique perks with cards to sum up here. Just know that each credit

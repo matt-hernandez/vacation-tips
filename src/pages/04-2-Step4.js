@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Banner from '../components/banner';
+import Link from '../components/link';
 
 class Step4WhatIDid extends Component {
   static title = 'Step 4 - What I did';
@@ -10,7 +11,9 @@ class Step4WhatIDid extends Component {
         <Banner headshot={true} color="#22b8cf" />
         <section>
           <p>
-            When I got my Chase Sapphire Reserve, I was able to get my spending goal pretty easily.
+            When I got my <Link
+              href="https://creditcards.chase.com/a1/sapphire/DualA">Chase Sapphire Reserve</Link>,
+            I was able to get my spending goal pretty easily.
             I did pay my rent with my card for one month just to push myself over the edge. I
             incurred a 3% fee for paying with a credit card, but compared to 100,000 Chase points,
             it was a no-brainer.

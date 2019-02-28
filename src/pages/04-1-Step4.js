@@ -26,8 +26,9 @@ class Step4 extends Component {
             you have a good credit score already, you&#x2019;re probably doing this anyway.
           </p>
           <p>
-            But what about that spending goal itself? If you applied for the Chase Sapphire
-            Preferred or Reserve, you&#x2019;ll need to spend $4,000 in three months starting from
+            But what about that spending goal itself? If you applied for the <Link
+              href="https://www.referyourchasecard.com/6/Q69RWB34CF">Chase Sapphire Preferred</Link> or <Link
+              href="https://creditcards.chase.com/a1/sapphire/DualA">Reserve</Link>, you&#x2019;ll need to spend $4,000 in three months starting from
             the day you get approved. Not the day your card arrives in the mail. The day you get
             approved.
           </p>

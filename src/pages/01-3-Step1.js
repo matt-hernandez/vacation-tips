@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Banner from '../components/banner';
+import Link from '../components/link';
 
 class Step1WhatIDid extends Component {
   static title = 'Step 1 - What I did';
@@ -15,10 +16,11 @@ class Step1WhatIDid extends Component {
             for that.
           </p>
           <p>
-            The first was that the Chase Sapphire Reserve, with its whopping $450 annual fee,
-            offered a limited-time sign-up bonus of 100,000 points for spending $4,000 in the
-            first three months. That kind of bonus was unheard of at the time and brought Chase a
-            lot of publicity.
+            The first was that the <Link
+              href="https://creditcards.chase.com/a1/sapphire/DualA">Chase Sapphire Reserve</Link>,
+            with its whopping $450 annual fee, offered a limited-time sign-up bonus of
+            100,000 points for spending $4,000 in the first three months. That kind of bonus was
+            unheard of at the time and brought Chase a lot of publicity.
           </p>
           <p>
             Ultimately, paying $450 for that sheer mountain of points made sense. And I also
@@ -28,13 +30,16 @@ class Step1WhatIDid extends Component {
           <p>
             I kept the card for almost a year. Once I saw that my renewal time was up, I decided
             that I didn&#x2019;t want to pay $450 again. I called Chase and had them downgrade
-            my card to the Sapphire Preferred. I lost some great perks, but without a massive
-            sign-up bonus to back it up, $450 was just too much.
+            my card to the <Link
+              href="https://www.referyourchasecard.com/6/Q69RWB34CF">Sapphire Preferred</Link>.
+            I lost some great perks, but without a massive sign-up bonus to back it up, $450 was
+            just too much.
           </p>
           <p>
-            Today, the Chase Sapphire Reserve only offers a 50,000 point sign-up bonus.
-            There&#x2019;s talk that they may do another 100,000 point sign-up promotion in the
-            future, but I&#x2019;m not a fortune teller.
+            Today, the <Link
+              href="https://creditcards.chase.com/a1/sapphire/DualA">Chase Sapphire Reserve</Link> only
+            offers a 50,000 point sign-up bonus. There&#x2019;s talk that they may do another
+            100,000 point sign-up promotion in the future, but I&#x2019;m not a fortune teller.
           </p>
           <p>
             All this said, just because I went with Chase doesn&#x2019;t mean you should.

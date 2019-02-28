@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Banner from '../components/banner';
+import Link from '../components/link';
 
 class Step1Continued extends Component {
   static title = 'Step 1 - Credit card rewards programs (continued)';
@@ -13,8 +14,11 @@ class Step1Continued extends Component {
             To get back to points, all of the mentioned cards have &#x201C;sign-up bonuses&#x201D;
             that are only available to new card members. A sign-up bonus will reward you with a
             very large amount of points after you spend a certain dollar amount on your new credit
-            card within a certain time frame. At the time of this writing, the Chase Sapphire
-            Preferred and Reserve will both award you with 50,000 points if you spend $4,000 on
+            card within a certain time frame. At the time of this writing, the <Link
+              href="https://www.referyourchasecard.com/6/Q69RWB34CF">Chase Sapphire
+            Preferred</Link> and <Link
+              href="https://creditcards.chase.com/a1/sapphire/DualA">Reserve</Link> will
+            both award you with 50,000 points if you spend $4,000 on
             your card within the first three months of being approved.
           </p>
           <p>

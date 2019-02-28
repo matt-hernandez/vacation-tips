@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Banner from '../components/banner';
+import Link from '../components/link';
 
 class Step7 extends Component {
   static title = 'Step 7 - After the trip';
@@ -19,8 +20,10 @@ class Step7 extends Component {
             keep them. If not, find which ones are worth your time and close the rest.
           </p>
           <p>
-            For me, I closed my hotel cards, but I kept my Chase Sapphire Preferred. I put almost
-            everything on it to this day and earn a good amount of points with it every month.
+            For me, I closed my hotel cards, but I kept my <Link
+              href="https://www.referyourchasecard.com/6/Q69RWB34CF">Chase Sapphire Preferred</Link>.
+            I put almost everything on it to this day and earn a good amount of points with it
+            every month.
           </p>
           <p>
             You may also decide that you want to branch out a bit. If you earned

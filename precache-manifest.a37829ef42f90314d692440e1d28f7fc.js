@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/vacation-tips/static/media/Raleway.f0ff0dd2.woff2"
   },
   {
-    "revision": "22916b4d49fd4c16d26a169f5f06744f",
+    "revision": "8306104604b9c4a696a3dcc4959b7959",
     "url": "/vacation-tips/index.html"
   }
 ];

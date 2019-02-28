@@ -28,9 +28,6 @@ function Menu({ activeIndex }) {
           <span className="hamburger-stick"/>
         </button>
         <nav className={menuPosition}>
-          <button className="close-menu" onClick={closeMenu}>
-            &times;
-          </button>
           <ul>
             { journey.map((page, i) => (
               <li key={page.url}>
@@ -39,6 +36,9 @@ function Menu({ activeIndex }) {
               </li>
             )) }
           </ul>
+          <button className="close-menu" onClick={closeMenu}>
+            &times;
+          </button>
         </nav>
       </div>
     </>

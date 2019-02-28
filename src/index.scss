@@ -97,12 +97,16 @@ h1 {
   color: $heading-text-color;
 }
 
-p {
+p, li {
   margin-bottom: rem(20px);
   line-height: rem(36px);
   font-size: rem(18px);
   font-family: $paragraph-font;
   color: $paragraph-text-color;
+}
+
+li {
+  list-style-type: disc;
 }
 
 a {

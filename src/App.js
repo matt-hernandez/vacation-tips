@@ -10,19 +10,21 @@ const pageIndex = getPageIndex();
 class App extends Component {
   render() {
     return (
-      <Router basename="/vacation-tips">
+      <Router>
         <Route render={({ location }) => {
-          if (pageIndex > 0 && needRedirect && location.pathname === '/') {
+          if (pageIndex > 0 && needRedirect && location.pathname === '/') { // Used at start up
             needRedirect = false;
             return <Redirect to={journey[pageIndex].url} />;
           }
           needRedirect = false;
           const newPageIndex = journey.findIndex(page => page.url === location.pathname);
           setPageIndex(newPageIndex);
+          const pageDirection = getPageDirection();
+          const timeout = pageDirection === 'still' ? 0 : 1000;
           return (
-            <div className={getPageDirection()}>
+            <div className={pageDirection}>
               <TransitionGroup>
-                <CSSTransition key={location.key} classNames="fade" timeout={1000}>
+                <CSSTransition key={location.key} classNames="fade" timeout={timeout}>
                   <Switch location={location}>
                     {journey.map(page =>
                       <Route exact key={page.url} path={page.url} component={page.component} />

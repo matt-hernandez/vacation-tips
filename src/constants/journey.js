@@ -149,19 +149,19 @@ export function setPageIndex(index) {
 }
 
 export function decreasePageIndex() {
+  let newPageIndex = pageIndex;
   if (pageIndex > 0) {
-    pageIndex--;
-    pageDirection = 'backward';
-    localStorage.setItem('ccTravelPageIndex', pageIndex)
+    newPageIndex--;
   }
+  return newPageIndex;
 }
 
 export function increasePageIndex() {
+  let newPageIndex = pageIndex;
   if (pageIndex < lastPageIndex) {
-    pageIndex++;
-    pageDirection = 'forward';
-    localStorage.setItem('ccTravelPageIndex', pageIndex)
+    newPageIndex++;
   }
+  return newPageIndex;
 }
 
 export function isAtBeginning() {
@@ -182,19 +182,18 @@ class NextPrev extends Component {
   };
 
   onPrev = () => {
-    decreasePageIndex();
-    this.navigate();
+    const newPageIndex = decreasePageIndex();
+    this.navigate(newPageIndex);
   }
 
   onNext = () => {
-    increasePageIndex();
-    this.navigate();
+    const newPageIndex = increasePageIndex();
+    this.navigate(newPageIndex);
   }
 
-  navigate() {
+  navigate(newPageIndex) {
     const { history } = this.props;
-    const pageIndex = getPageIndex();
-    history.push(journey[pageIndex].url);
+    history.push(journey[newPageIndex].url);
   }
 
   render() {

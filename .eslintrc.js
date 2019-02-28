@@ -106,10 +106,6 @@ const rulesBestPractices = {
   'no-labels': 2,
   'no-lone-blocks': 2,
   'no-loop-func': 2,
-  'no-magic-numbers': [2, {
-    'ignore': [0, 1],
-    'enforceConst': true
-  }],
   'no-multi-spaces': 0,
   'no-multi-str': 2,
   'no-new': 2,

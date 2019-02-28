@@ -6,7 +6,7 @@ function Banner({icon, color, headshot}) {
   const icons = Array.isArray(icon) ? icon : [icon];
   return (
     <div className="banner" style={{ backgroundColor: color }}>
-      {!headshot && icons.map(ico => <i key={ico} className={`${ico} fa-9x`} />)}
+      {!headshot && icons.map(ico => <i key={ico} className={`${ico}`} />)}
       {headshot && <img className="headshot" src={me} alt="Matt Hernandez" />}
     </div>
   );

@@ -357,6 +357,13 @@ section {
 
     &:not(:first-child) {
       margin-left: rem(48px);
+
+      @include media('<tablet') {
+        margin-left: rem(36px);
+      }
+      @include media('<520px') {
+        margin-left: rem(28px);
+      }
     }
   }
 
@@ -375,6 +382,14 @@ section {
 
 i {
   color: #fff;
+  font-size: rem(16px * 9);
+
+  @include media('<tablet') {
+    font-size: rem(16px * 5);
+  }
+  @include media('<520px') {
+    font-size: rem(16px * 4);
+  }
 }
 
 .banner-image {

@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import Banner from '../components/banner';
 
 class Disclaimer3 extends Component {
+  static title = 'Disclaimer 3';
+
   render() {
     return (
       <>
-        <section>
-          <h1>Disclaimer 3</h1>
-        </section>
         <Banner color="#20c997" icon="fas fa-calendar-alt" />
         <section>
           <p>

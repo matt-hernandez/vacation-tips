@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import Banner from '../components/banner';
 
 class Step5 extends Component {
+  static title = 'Step 5 - Hotel credit cards';
+
   render() {
     return (
       <>
-        <section>
-          <h1>Step 5 - Hotel credit cards</h1>
-        </section>
         <Banner icon="fas fa-hotel" color="#20c997" />
         <section>
           <p>

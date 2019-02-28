@@ -3,12 +3,11 @@ import Banner from '../components/banner';
 
 
 class Step3 extends Component {
+  static title = 'Step 3 - Now apply for your card';
+
   render() {
     return (
       <>
-        <section>
-          <h1>Step 3 - Now apply for your card</h1>
-        </section>
         <Banner icon="fas fa-credit-card" color="#4c6ef5" />
         <section>
           <p>

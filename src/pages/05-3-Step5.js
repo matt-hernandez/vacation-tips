@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import Banner from '../components/banner';
 
 class Step5P5 extends Component {
+  static title = 'Step 5.5 - Hotel rewards programs';
+
   render() {
     return (
       <>
-        <section>
-          <h1>Step 5.5 - Hotel rewards programs</h1>
-        </section>
         <Banner icon="fas fa-bed" color="#20c997" />
         <section>
           <p>

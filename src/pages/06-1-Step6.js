@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import Banner from '../components/banner';
 
 class Step6 extends Component {
+  static title = 'Step 6 - Now go have an adventure!';
+
   render() {
     return (
       <>
-        <section>
-          <h1>Step 6 - Now go have an adventure!</h1>
-        </section>
         <Banner icon={[ 'fas fa-plane', 'fas fa-train', 'fas fa-globe-americas' ]} color="#2086f3" />
         <section>
           <p>

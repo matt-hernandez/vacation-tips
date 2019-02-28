@@ -3,12 +3,11 @@ import Banner from '../components/banner';
 import Link from '../components/link';
 
 class PartingWords extends Component {
+  static title = 'Resources';
+
   render() {
     return (
       <>
-        <section>
-          <h1>Resources</h1>
-        </section>
         <Banner icon="fas fa-list-ul" color="#2086f3" />
         <section>
           <p>

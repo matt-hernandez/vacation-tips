@@ -3,12 +3,11 @@ import Banner from '../components/banner';
 
 
 class Step2P5 extends Component {
+  static title = 'Step 2.5 - Airline reward programs';
+
   render() {
     return (
       <>
-        <section>
-          <h1>Step 2.5 - Airline reward programs</h1>
-        </section>
         <Banner icon="fas fa-plane-departure" color="#4c6ef5" />
         <section>
           <p>

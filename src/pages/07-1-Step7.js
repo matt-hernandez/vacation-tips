@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import Banner from '../components/banner';
 
 class Step7 extends Component {
+  static title = 'Step 7 - After the trip';
+
   render() {
     return (
       <>
-        <section>
-          <h1>Step 7 - After the trip</h1>
-        </section>
         <Banner icon="far fa-smile" color="#22b8cf" />
         <section>
           <p>

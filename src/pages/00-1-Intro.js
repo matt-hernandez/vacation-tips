@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 
 class Intro extends Component {
+  static title = 'Introduction';
+
   render() {
     return (
       <>
-        <section>
-          <h1>Introduction</h1>
-        </section>
         <section>
           <p>
             This is me. Last year, I took a trip across three countries: 7 days exploring Ireland, 4

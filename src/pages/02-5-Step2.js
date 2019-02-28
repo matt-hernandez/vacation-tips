@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import Banner from '../components/banner';
 
 class Step2P5WhatIDidContinued extends Component {
+  static title = 'Step 2.5 - What I did (continued)';
+
   render() {
     return (
       <>
-        <section>
-          <h1>Step 2.5 - What I did (continued)</h1>
-        </section>
         <Banner headshot={true} color="#22b8cf" />
         <section>
           <p>

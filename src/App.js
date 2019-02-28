@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import journey, { getPageIndex, getPageDirection, setPageIndex } from './constants/journey';
+import Menu from './components/menu';
 
 let needRedirect = true;
 const pageIndex = getPageIndex();
@@ -19,6 +20,7 @@ class App extends Component {
           setPageIndex(newPageIndex);
           return (
             <div className={getPageDirection()}>
+              <Menu />
               <TransitionGroup>
                 <CSSTransition key={location.key} classNames="fade" timeout={1000}>
                   <Switch location={location}>

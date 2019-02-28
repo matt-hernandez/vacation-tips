@@ -3,12 +3,11 @@ import Banner from '../components/banner';
 import Link from '../components/link';
 
 class Step4 extends Component {
+  static title = 'Step 4 - Get that sign-up bonus, responsibly';
+
   render() {
     return (
       <>
-        <section>
-          <h1>Step 4 - Get that sign-up bonus, responsibly</h1>
-        </section>
         <Banner icon="fas fa-file-invoice-dollar" color="#ff922b" />
         <section>
           <p>
